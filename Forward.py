@@ -24,14 +24,12 @@ ar = PiMotor.Arrow(4) # South
 ## forward in percentage(0-100)
 
 try:
-    while True:
-#-----------To Drive the Motors Forward------------# 
-        print(" Robot Moving Forward ")
-        af.on()
-        motorFront.forward(100)
-		motorBack.reverse (100)
-        time.sleep(5)
-#--------------------------------------------------#
+while True:
+print(" Robot Moving Forward ")
+af.on()
+motorFront.forward(100)
+motorBack.reverse (100)
+time.sleep(5)
 except KeyboardInterrupt:
     GPIO.cleanup()
 
